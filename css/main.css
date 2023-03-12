@@ -1,0 +1,396 @@
+/* reset*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*estilos generales*/
+
+body{
+    
+    background-color: #E4DCD1;
+    font-family: 'Calistoga', cursive;
+    color: #66000f;
+}
+
+/*estilos de header*/
+
+header{
+    color: black;
+    display: grid;
+    justify-content: space-around;
+    align-items: center;
+    padding: 80px;
+    text-decoration: none;
+    
+}
+
+
+
+
+header nav ul{
+    display: flex;
+    list-style: none;
+    text-decoration: none;
+    gap: 2rem;
+    justify-content: center;
+    list-style: none;
+    
+    
+    
+}
+.card-registration .select-input.form-control[readonly]:not([disabled]) {
+    font-size: 1rem;
+    line-height: 2.15;
+    padding-left: .75em;
+    padding-right: .75em;
+    }
+    .card-registration .select-arrow {
+    top: 13px;
+    }
+
+
+
+
+/*estilos de main*/
+
+main div img{
+    width: 400px;
+    height: 400px;
+    object-fit: cover;
+    
+
+}
+main{
+    height: 170vh;
+    margin: 3rem 3rem 3rem 3rem;
+    background-color: #E4DCD1;
+    gap: 2rem;
+
+    
+        
+}
+
+.mainIndex{
+    height: 0vh;
+}
+
+.sectionIndex{
+    height: 780vh;
+    
+}
+
+
+.harryMain{
+    display: none;
+}
+
+
+
+.mainRegistrarse{
+    height: 200vh;
+    margin: 2rem 2rem 2rem 2rem;
+    padding: 3rem;
+    
+
+}
+
+
+
+.mainShows {
+    height: 200vh;
+    text-decoration: none;
+    display: grid;
+    text-align: start;
+    justify-content: center;
+    margin: 1rem;
+
+    }
+
+    .mainEscucha{
+        height: 300vh;
+        justify-content: center;
+        gap: 4rem;
+        text-align: start;
+    }
+
+.maiMerch{
+    height: 1010vh;
+}
+
+.discoUno, .discoDos, .camisetaUno, .camisetaDos, .camisetaTres, .camisetaCuatro, .hoodieUno, .hoodieDos, .hoodieTres, .hoodieCuatro{
+    width: 350PX;
+    height: 450px;
+    
+}
+
+/*estilos de items de main*/
+.HarryCuatro, .HarryCinco{
+    display: none;
+
+}
+
+
+
+
+
+/*estilos footer*/
+
+footer{
+    margin: 1rem;
+    padding: 1rem;
+    text-align: start;
+    display: grid;
+    gap: 0.5rem;
+    
+}
+
+footer div a img{
+    width: 3rem;
+    margin: 1rem;
+    display: flexbox;
+    justify-content: space-around;
+    
+}
+
+
+
+@media screen and (min-width:600px) {
+    
+    
+    main{
+        height: 390vh;
+        margin: 3rem 3rem 3rem 3rem;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template: auto;
+        gap: 2rem;
+        
+    }
+
+    .mainIndex{
+        display: flex;
+    }
+
+    
+
+    .HarryCuatro{
+        display: block;
+    }
+
+    .HarryUno:hover, .HarryDos:hover, .HarryTres:hover, .HarryCuatro:hover{
+        transform: scale(0.8);
+        opacity: 30%;
+    
+    }
+
+    .mainIndex{
+        height: 210vh;
+        align-items: center;
+        justify-content: center;
+
+    }
+
+    .mainEscucha {
+        height: 270vh;
+        
+        grid-template-columns: repeat(2, 0fr);
+        grid-template: auto;
+        display: grid;
+        place-items: center;
+    }
+
+    
+
+    .mainShows{
+        height: 170vh;
+    }
+    
+    main div img{
+        width: 350px;
+        height: 350px;
+        object-fit: cover;
+    }
+
+    .maiMerch{
+        height: 320vh;
+    }
+
+    .discoUno, .discoDos
+        {
+        width: 250PX;
+        height: 170px;
+        
+        
+  
+    }
+
+    .camisetaUno, .camisetaDos, .camisetaTres, .camisetaCuatro{
+        width: 250PX;
+        height: 170px;
+        
+        
+  
+    }
+
+    .hoodieUno, .hoodieDos, .hoodieTres, .hoodieCuatro{
+        width: 250PX;
+        height: 170px;
+        
+    }
+    
+
+    footer{
+        text-align: center;
+    }
+    
+    
+}
+
+/*estilos mq de desktop*/
+
+@media screen and (min-width:1024px) {
+
+    main {
+        height: 90vh;
+        justify-content: space-around;
+        display: flex;
+        
+    }
+    
+    
+
+
+    .HarryCinco{
+        display: block;
+        
+    }
+
+    .HarryUno:hover, .HarryDos:hover, .HarryTres:hover, .HarryCuatro:hover, .HarryCinco:hover{
+        transform: scale(0.8);
+        opacity: 30%;
+    
+    }
+
+    .mainIndex{
+        height: 45vh;
+    }
+
+    .sectionIndex{
+        display: flex;
+        width: 1600px;
+        height: 430px;
+
+    }
+
+    .sectionIndex img {
+        align-items: center;
+        width: 2px;
+        flex-grow: 0.4;
+        object-fit: cover;
+        opacity: .8;
+        transition: 1s ;
+        transform: translate(70%, 14%);
+
+
+    }
+
+    .sectionIndex img:hover {
+        
+       cursor: crosshair;
+       width: 400px;
+       opacity: 1;
+       filter: contrast(120%);
+
+    }
+
+    .harryMain{
+        display: block;
+    }
+
+   .maiMerch{
+    height: 320vh;
+    
+
+   }
+
+   .mainShows{
+    height: 70vh;
+   }
+
+    .mainEscucha {
+        height: 250vh;
+        margin: 2rem;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template: auto;
+        display: grid;
+        text-align: center;
+        padding: 2rem;
+        gap: 1rem;
+    }
+
+    .mainEscucha div {
+        display: grid;
+        justify-content: center;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        text-align: start;
+    }
+
+    .HarryShows{
+        width: 700PX;
+        height: 100%;
+        gap: 4rem;
+        transform: scale(0.8);
+        
+
+    }
+
+    main div h2{
+        justify-content: center;
+        
+    }
+
+    .videos {
+        justify-content: space-around;
+        display: grid;
+        align-items: center;
+        
+        
+    }
+
+    
+
+    .camisetaUno, .camisetaDos, .camisetaTres, .camisetaCuatro{
+        width: 400PX;
+        height: 400px;
+        
+        
+  
+    }
+
+   
+
+    .discoUno, .discoDos
+        {
+        width: 400PX;
+        height: 400px;
+        
+        
+  
+    }
+   
+
+
+    .hoodieUno, .hoodieDos, .hoodieTres, .hoodieCuatro{
+        width: 400PX;
+        height: 400px;
+        
+    }
+
+    
+
+    
+    
+}
